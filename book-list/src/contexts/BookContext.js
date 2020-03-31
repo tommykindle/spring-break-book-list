@@ -5,6 +5,7 @@ export const BookContext = createContext();
 
 const BookContextProvider = (props) => {
     const [books, dispatch] = useReducer(bookReducer, []);
+    console.log("line8", books)
     return (
         <BookContext.Provider value={{ books, dispatch }}>
             {props.children}
