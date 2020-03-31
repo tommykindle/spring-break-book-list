@@ -1,7 +1,6 @@
 import uuid from "uuid/v4";
 
 export const bookReducer = (state, action) => {
-    console.log(action)
     switch (action.type) {
         case "ADD_BOOK":
             return [...state, {

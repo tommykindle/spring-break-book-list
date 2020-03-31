@@ -5,7 +5,7 @@ import { BookContext } from "../contexts/BookContext";
 const BookList = () => {
 
     const { books } = useContext(BookContext)
-    console.log("books", books)
+
     return books.length ? (
         <div className="book-list">
             <ul>
